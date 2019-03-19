@@ -5,5 +5,5 @@ script:
   - docker build -t mynode .
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-  - docker tag mynode $DOCKER_USER/ubuntu1804-node10
-  - docker push $DOCKER_USER/ubuntu1804-node10
+  - docker tag mynode $DOCKER_USER/ubuntu1804_node10
+  - docker push $DOCKER_USER/ubuntu1804_node10
