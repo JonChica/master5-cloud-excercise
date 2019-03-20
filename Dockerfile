@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 WORKDIR /home/app
 
-COPY . .
+COPY index.js package.json ./
 
 RUN apt-get update \
   && apt-get install -y curl \
